@@ -1,0 +1,24 @@
+<p>Your Reminders!</p>
+
+
+<div ng-app="myApp.Reminders" ng-controller="RemindersCtrl">
+    <form name="Reminders" >
+        Title:<input type="text" name="Reminder" ng-model="Title" required />
+        Description:<input type="text" name="Reminder" ng-model="Description" required />
+        Date:<input type="date" name="Reminder" ng-model="Date" required />
+        <button ng-click="addReminder()">Add</button>
+    </form>
+
+
+    <div ng-repeat="reminder in Reminder">
+       <input ng-model='reminder.title'  id='{{$index}}' class='{{$index}}' />
+       <input ng-model='reminder.Description' id='{{$index}}' class='{{$index}}' />
+       <input ng-model='reminder.Date' id='{{$index}}' class='{{$index}}' />
+       <button ng-click='del($index)'>DEL</button>
+    </div>
+
+
+
+</div>
+
+
