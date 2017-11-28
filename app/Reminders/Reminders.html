@@ -11,9 +11,9 @@
 
 
     <div ng-repeat="reminder in Reminder">
-       <input ng-model='reminder.title'  id='{{$index}}' class='{{$index}}' />
-       <input ng-model='reminder.Description' id='{{$index}}' class='{{$index}}' />
-       <input ng-model='reminder.Date' id='{{$index}}' class='{{$index}}' />
+       <input ng-model='reminder.title'   class='{{$index}}' />
+       <input ng-model='reminder.Description'  class='{{$index}}' />
+       <input ng-model='reminder.Date'  class='{{$index}}' />
        <button ng-click='del($index)'>DEL</button>
     </div>
 
